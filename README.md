@@ -5,7 +5,7 @@ Advanced Firmware Threat Detection and Application-Layer Security
 
 ## Overview
 
-SecureWalmart Suite is a dual-module security system designed to protect both hardware-level infrastructure and application-level activities in a retail environment.
+Secure Cart is a dual-module security system designed to protect both hardware-level infrastructure and application-level activities in a retail environment.
 
 It consists of:
 
