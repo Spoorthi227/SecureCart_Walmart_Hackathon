@@ -52,8 +52,10 @@ Once booted into Ubuntu, open the terminal and run:
 
 ```bash
 sudo apt update
-sudo apt install python3 python3-pip
-pip3 install streamlit
+sudo apt install git build-essential python3-pip
+git clone https://github.com/Spoorthi227/SecureCart_Walmart_Hackathon.git
+cd chipsec
+sudo pip3 install .
 ```
 
 ---
@@ -61,7 +63,7 @@ pip3 install streamlit
 #### Step 4: Clone the Project and Run the Firmware Tool
 
 ```bash
-git clone https://github.com/yourusername/securewalmart-suite.git
+
 cd securewalmart-suite
 python3 firmware_sentinel.py
 ```
