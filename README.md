@@ -145,24 +145,6 @@ streamlit run app.py
 
 ---
 
-## Tech Stack
-
-- Python 3.x  
-- Tkinter (firmware GUI)  
-- Streamlit (dashboard UI)  
-- JSON/text log simulation  
-- Simulated GPT/LLM anomaly engine  
-- Behavioral biometrics (mocked patterns)
-
----
-
-## Future Enhancements
-
-- Real CHIPSEC + SPI flash integrations  
-- TPM-backed boot validation  
-- True LLM-based log parsing  
-- Unified timeline visualization across both tools  
-
 ---
 
 ## Conclusion
