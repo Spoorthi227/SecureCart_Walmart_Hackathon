@@ -120,8 +120,7 @@ pip3 install streamlit
 From the root project directory:
 
 ```bash
-cd securewalmart-suite
-streamlit run main_app.py
+streamlit run app.py
 ```
 
 ---
