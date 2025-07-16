@@ -54,25 +54,36 @@ Once booted into Ubuntu, open the terminal and run:
 sudo apt update
 sudo apt install git build-essential python3-pip
 git clone https://github.com/Spoorthi227/SecureCart_Walmart_Hackathon.git
+cd SecureCart_Walmart_Hackathon
+git clone https://github.com/chipsec/chipsec.git
 cd chipsec
 sudo pip3 install .
 ```
 
+If errors like  “MSR not accessible” or “SPI controller not found” occur use
+'''bash
+sudo modprobe msr
+sudo modprobe spi_pxa2xx_platform
+'''
+
 ---
 
-#### Step 4: Clone the Project and Run the Firmware Tool
+#### Step 4: Run the Firmware Tool
 
+To check if its safe and doesnt hold sensitive information run the below 
+'''bash 
+sudo chipsec_main -m common.bios_kbrd_buffer
+'''
+
+Run scan
 ```bash
-
-cd securewalmart-suite
+cd ..
 python3 firmware_sentinel.py
 ```
 
 This tool will:
 
-- Simulate scanning of UEFI modules  
-- Flag unknown GUIDs and modified firmware sections  
-- Generate logs under the `logs/` directory  
+- Generate a report of scan and alert if Lojax or MoonBounce vulnerabilities are found
 
 These logs can be imported into the dashboard for further analysis.
 
