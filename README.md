@@ -78,7 +78,7 @@ sudo chipsec_main -m common.bios_kbrd_buffer
 Run scan
 ```bash
 cd ..
-python3 firmware_sentinel.py
+python3 firmware_detection.py
 ```
 
 This tool will:
