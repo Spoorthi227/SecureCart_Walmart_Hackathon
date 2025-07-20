@@ -2,8 +2,9 @@
 Advanced Firmware Threat Detection and Application-Layer Security
 ---
 
-# Deployed App
-https://secure-cart-retail-security.streamlit.app/
+## Deployed App
+
+ - https://secure-cart-retail-security.streamlit.app/
 ---
 
 ## Overview
